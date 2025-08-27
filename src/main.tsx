@@ -22,17 +22,16 @@ createRoot(document.getElementById('root')!).render(
         <Provider store={store}>
           <RouterProvider router={router} />
           <Toaster position="top-right"
-        richColors
-        toastOptions={{
-          duration: 1500,
-          style: {
-            borderRadius: "12px",
-            padding: "16px 24px",
-            fontWeight: 200,
-            fontSize: "10px",
-            color: "green"
-          },
-        }}/>
+            richColors
+            toastOptions={{
+              duration: 1500,
+              style: {
+                width: "300px",
+                borderRadius: "12px",
+                fontSize: "10px",
+                color: "black"
+              },
+            }} />
         </Provider>
       </QueryClientProvider>
     </ThemeProvider>
