@@ -1,6 +1,7 @@
 import * as React from "react"
 import { GalleryVerticalEnd } from "lucide-react"
 import { Link } from "react-router-dom"
+import { useSidebar } from "@/components/ui/sidebar";
 
 import {
   Sidebar,
@@ -34,18 +35,18 @@ const data = {
       title: "Cart",
       url: "/cart",
       items: [
-      //   {
-      //     title: "Routing",
-      //     url: "#",
-      //   },
-      //   {
-      //     title: "Data Fetching",
-      //     url: "#",
-      //     isActive: true,
-      //   },
+        //   {
+        //     title: "Routing",
+        //     url: "#",
+        //   },
+        //   {
+        //     title: "Data Fetching",
+        //     url: "#",
+        //     isActive: true,
+        //   },
       ],
     },
-        {
+    {
       title: "Wish List",
       url: "/wish",
       items: [
@@ -64,6 +65,12 @@ const data = {
 }
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+  const { open, setOpen } = useSidebar(); // get sidebar state and setter
+
+  const handleLinkClick = () => {
+    setOpen(false); // closes the sidebar
+  };
+
   return (
     <Sidebar {...props}>
       <SidebarHeader>
@@ -91,7 +98,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                   {/* <a href={item.url} className="font-medium">
                     {item.title}
                   </a> */}
-                  <Link to={item.url} className="font-medium">
+                  <Link to={item.url} className="font-medium" onClick={handleLinkClick}>
                     {item.title}
                   </Link>
                 </SidebarMenuButton>

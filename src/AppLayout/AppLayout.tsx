@@ -25,7 +25,7 @@ function AppLayout() {
                         <BreadcrumbList>
                             <BreadcrumbItem className="hidden md:block">
                                 <BreadcrumbLink href="#">
-                                    Building Your Application
+                                    Store
                                 </BreadcrumbLink>
                             </BreadcrumbItem>
                             {/* <BreadcrumbSeparator className="hidden md:block" /> */}
