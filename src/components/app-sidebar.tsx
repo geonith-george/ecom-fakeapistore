@@ -65,11 +65,7 @@ const data = {
 }
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
-  const { open, setOpen } = useSidebar(); // get sidebar state and setter
-
-  const handleLinkClick = () => {
-    setOpen(false); // closes the sidebar
-  };
+  const { setOpenMobile} = useSidebar(); // get sidebar state and setter
 
   return (
     <Sidebar {...props}>
@@ -98,7 +94,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                   {/* <a href={item.url} className="font-medium">
                     {item.title}
                   </a> */}
-                  <Link to={item.url} className="font-medium" onClick={handleLinkClick}>
+                  <Link to={item.url} onClick={() => setOpenMobile(false)} className="font-medium">
                     {item.title}
                   </Link>
                 </SidebarMenuButton>
