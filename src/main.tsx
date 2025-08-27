@@ -21,7 +21,18 @@ createRoot(document.getElementById('root')!).render(
       <QueryClientProvider client={queryClient}>
         <Provider store={store}>
           <RouterProvider router={router} />
-          <Toaster />
+          <Toaster position="top-right"
+        richColors
+        toastOptions={{
+          duration: 1500,
+          style: {
+            borderRadius: "12px",
+            padding: "16px 24px",
+            fontWeight: 200,
+            fontSize: "10px",
+            color: "green"
+          },
+        }}/>
         </Provider>
       </QueryClientProvider>
     </ThemeProvider>
