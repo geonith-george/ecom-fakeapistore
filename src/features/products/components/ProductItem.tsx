@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { addToCart } from "@/features/cart/components/cartSlice";
 import { toast } from "sonner"
 
-function ProductItem({product}:any) {
+function ProductItem({product}) {
 
     const dispatch = useDispatch()
 

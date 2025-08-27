@@ -1,4 +1,3 @@
-import { mock } from "@/features/products/api/mock";
 import ProductList from "@/features/products/components/ProductList";
 import { usePosts } from "@/features/products/hooks/usePosts";
 

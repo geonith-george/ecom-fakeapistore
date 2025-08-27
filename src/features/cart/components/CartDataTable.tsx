@@ -7,7 +7,7 @@ import { toast } from "sonner"
 
 
 const CartDataTable = () => {
-  const cart = useSelector((state: any) => state.cart);
+  const cart = useSelector((state) => state.cart);
   const dispatch = useDispatch();
 
   return (
@@ -21,7 +21,7 @@ const CartDataTable = () => {
           </TableRow>
         </TableHeader>
         <TableBody>
-          {cart.map((item: any) => (
+          {cart.map((item) => (
             <TableRow key={item.id}>
               <TableCell>{item.title}</TableCell>
               <TableCell>${item.price.toFixed(2)}</TableCell>
@@ -39,7 +39,7 @@ const CartDataTable = () => {
       {cart.length > 0
         ?
         <div className="border p-2 flex ">
-          <p>Total : {cart.reduce((acc: any, cur: any) => acc + cur.price, 0)} </p>
+          <p>Total : {cart.reduce((acc, cur) => acc + cur.price, 0)} </p>
         </div> : <p className="p-2 flex"> Your cart is empty</p>}
 
     </div>
