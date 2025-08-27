@@ -2,7 +2,9 @@ import './App.css'
 
 function App() {
   return (
-   <>hello world</>
+    <div className='p-2'>
+
+    </div>
   )
 }
 
