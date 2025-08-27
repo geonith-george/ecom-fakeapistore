@@ -46,21 +46,21 @@ const data = {
         //   },
       ],
     },
-    {
-      title: "Wish List",
-      url: "/wish",
-      items: [
-        // {
-        //   title: "Routing",
-        //   url: "#",
-        // },
-        // {
-        //   title: "Data Fetching",
-        //   url: "#",
-        //   isActive: true,
-        // },
-      ],
-    },
+    // {
+    //   title: "Wish List",
+    //   url: "/wish",
+    //   items: [
+    //     // {
+    //     //   title: "Routing",
+    //     //   url: "#",
+    //     // },
+    //     // {
+    //     //   title: "Data Fetching",
+    //     //   url: "#",
+    //     //   isActive: true,
+    //     // },
+    //   ],
+    // },
   ],
 }
 
