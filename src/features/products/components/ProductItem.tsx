@@ -15,7 +15,7 @@ function ProductItem({ product }) {
     >
       <Card className="rounded-2xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-200">
         {/* Image */}
-        <div className="w-full h-48 flex items-center justify-center bg-gray-50">
+        <div className="w-full h-48 flex items-center justify-center">
           <motion.img
             src={product.image}
             alt={product.title}
